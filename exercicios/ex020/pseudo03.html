@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(90deg, rgb(171, 236, 171), rgb(66, 95, 66));
+        }
+        main {
+            background-color: white;
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px rgb(20, 36, 20);
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5em;
+            text-align: center;
+            color: rgb(15, 63, 15);
+            text-shadow: 1px 1px 1px rgb(10, 20, 10);
+        }
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.em;
+            text-align: left;
+            color: rgb(27, 71, 27);
+            text-shadow: 1px 1px 1px rgb(10, 20, 10);
+        }
+
+        /* Possibilidades de pseudo-classes em links
+           
+           link: configuração original do link
+           visited: configuração para o link já visitado
+           hover: configuração para o link quando o cursor passar por cima
+           active: configuração para o link ao ser clicado
+           focus: configuração para o link em foco*/
+
+        .link:link {
+            color: black;
+        }
+        .link:visited {
+            color: rgb(108, 73, 141);
+        }
+        .link:hover {
+            color: red;
+            text-decoration: none;
+        }
+        .link:focus {
+            color: rgb(37, 56, 9);
+        }
+        .link:active {
+            color: gold;
+        }
+        .filho dd {
+            border-bottom: 1px solid black;
+            width: 300px;
+        }
+        .filho dd:last-child {
+            border-bottom: none;
+        }
+        
+        /* Possibilidades de pseudo-classes em listas 
+           first-child: configurar o primeiro filho do elemento
+           last-child: configurar o último filho do elemento*/
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Pseudo-classes</h1>
+        <h2>Pseudo-classes em links e listas</h2>
+        <ul>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" class="link">Curso em Vídeo</a></li>
+        </ul>
+        <h2>Possibilidades de pseudo-classes em links</h2>
+        <dl class="filho">
+            <dt>link</dt> 
+            <dd>configuração original do link</dd>
+            <dt>visited</dt> 
+            <dd>configuração para o link já visitado</dd>
+            <dt>hover</dt> 
+            <dd>configuração para o link quando o cursor passar por cima</dd>
+            <dt>active</dt> 
+            <dd>configuração para o link ao ser clicado</dd>
+            <dt>focus</dt> 
+            <dd>configuração para o link em foco</dd>
+        </dl>
+        <h2>Possibilidades de pseudo-classes em listas</h2>
+        <dl class="filho">
+            <dt>first-child</dt>
+            <dd>configurar o primeiro filho do elemento</dd>
+            <dt>last-child</dt>
+            <dd>configurar o último filho do elemento</dd>
+        </dl>
+    </main>
+</body>
+</html>

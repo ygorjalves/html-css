@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudos</title>
+    <style>
+        body {
+            background-color: rgb(143, 236, 236);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            background-color: rgb(108, 206, 173);
+            width: 650px;
+            height: 350px;
+            margin: auto;
+        }
+        div {
+            text-align: center;
+            display: inline-block;
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 1px;
+            padding: 1px;
+        }
+        div:hover {
+            background-color: rgb(170, 131, 207);
+        }
+        div > a {
+            display: none;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            width: 100px;
+            margin: auto;
+        }
+        div:hover > a {
+            display: block;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            width: 100px;
+            margin: auto;
+        }
+        div > a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+        }
+        a {
+            color: red;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <main>
+    <div>
+        01 <p>Passe o mouse no campo quadrado</p>
+        <a href="https://www.cursoemvideo.com/" target="_blank">link</a>
+    </div>
+        
+    <div>
+        02 <p>Passe o mouse no campo quadrado</p>
+        <a href="https://www.cursoemvideo.com/" target="_blank">link</a>
+    </div>
+        
+    <div>
+        03 <p>Passe o mouse no campo quadrado</p>
+        <a href="https://www.cursoemvideo.com/" target="_blank">link</a>
+    </div>
+    <a href="https://www.cursoemvideo.com/" target="_blank">link</a>        
+    <a href="https://www.burgerking.com.br/" target="_blank">link</a>
+    </main>
+</body>
+</html>
