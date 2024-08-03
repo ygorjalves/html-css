@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo com Imagens</title>
+    <style>
+        #container {
+            height: 97dvh;
+            position: relative;
+            background: rgb(146, 146, 230) url(img/target001.png) center center no-repeat fixed;
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 300px;
+            width: 400px;
+            background: rgb(207, 92, 207) url(img/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--Aqui eu coloquei duas caixas semânticas, main (container); e article (conteudo que ficará no container)-->
+    <main id="container">
+        <article id="conteudo">
+
+        </article>
+    </main>
+</body>
+</html>
