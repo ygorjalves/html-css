@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /*Estilo de tela paisagem*/
+
+* {
+    background-color: aqua;
+}
