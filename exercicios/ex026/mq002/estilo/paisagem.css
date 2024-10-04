@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/*estilo paisagem*/
+
 body {
-    background-color: brown;
+    background-image: url(../imgs/cev-landscape.jpg);
+    background-position: left bottom;
 }
