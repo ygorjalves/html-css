@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    display: none;
+}
