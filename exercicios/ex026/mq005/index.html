@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
@@ -35,6 +36,14 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             var itens = document.getElementById("itens");
             if (itens.style.display == 'block') {
