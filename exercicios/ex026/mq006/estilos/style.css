@@ -77,9 +77,6 @@ main p {
     border: 1px solid black;
 }
 
-.spanborda:hover {
-    cursor: pointer;
-}
 
 #opcoes {
     margin: 20px 5px;
