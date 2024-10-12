@@ -14,11 +14,11 @@
         <span id="burger" class="material-icons" onclick="clickBurger()">menu</span>
         <menu id="menu">
             <ul>
-                <li><a href="#">opção 1</a></li>
-                <li><a href="#">opção 2</a></li>
-                <li><a href="#">opção 3</a></li>
-                <li><a href="#">opção 4</a></li>
-                <li><a href="#">opção 5</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Imóveis</a></li>
+                <li><a href="#">Veículos</a></li>
+                <li><a href="#">Investimentos</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </menu>
     </header>
@@ -101,15 +101,21 @@
             </div>
             <div id="form">
                 <form action="cadastro.php" method="get">
+                    <p id="range">
+                       <label for="inum">Valor  do crédito:</label>
+                       <input type="range" name="nnum" id="inum" min="100000" max="1000000" required step="50000" oninput="ival.innerHTML = Number(inum.value)">
+                       <output>R$</output>
+                       <output id="ival">100000</output>
+                    </p>
                     <input id="simu" type="submit" value="SIMULAR">
                 </form>
             </div>
         </article>
     </main>
     <aside>
-        <p>Todos os direitos reservados</p>
-        <p>Trabalhe conosco</p>
-        <p>Política de Privacidade</p>
+        <p><a href="#">Todos os direitos reservados</a></p>
+        <p><a href="#">Trabalhe conosco</a></p>
+        <p><a href="#">Política de Privacidade</a></p>
     </aside>
     <footer>
         <p>Site Desenvolvido por Ygor Alves</p>
@@ -195,7 +201,9 @@
 
         function simular() {
             var simu = document.getElementById('simu')
+            var range = document.getElementById('range')
             simu.style.display = 'block'
+            range.style.display = 'block'
         }
     </script>
 </body>
