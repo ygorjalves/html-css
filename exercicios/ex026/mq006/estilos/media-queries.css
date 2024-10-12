@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+pequenas telas: até 600px
+celulares: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200
+*/
+
+@media screen and (min-width: 768px) {
+    header > menu {
+        display: block;
+    }
+    header li {
+        display: inline;
+        padding: 2px;
+        margin: 2px;
+        border-radius: 5px;
+    }
+    header li:hover {
+        background-color: rgb(184, 180, 180);
+        color: black;
+    }
+    a:hover {
+        color: black;
+    }
+    #burger {
+        display: none;
+    }
+}
