@@ -25,16 +25,74 @@
 
     <main>
         <article>
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat omnis laborum quam tempora debitis veritatis consectetur at repudiandae laboriosam earum illo quas ad nam, corrupti expedita a suscipit itaque?
-            Earum, modi illum atque iure eius, eos mollitia voluptatibus facilis ullam, nobis temporibus laudantium vitae consequatur harum ex neque eaque labore architecto quos soluta. Modi, aspernatur consequatur? Eaque, dignissimos vero.
-            Dolorum, officiis perferendis optio laboriosam recusandae autem? Aperiam at recusandae quidem tempore blanditiis repudiandae quia. Deleniti, doloribus explicabo nihil illo fuga, deserunt aliquam officiis nisi iste obcaecati optio, eligendi temporibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore autem corporis, fuga delectus optio expedita inventore aliquam neque. Dicta, quam voluptates harum ea temporibus quaerat fugiat eaque delectus similique!
-            Sunt aspernatur deserunt, eum illo omnis quas modi magni a commodi quo tempore eveniet natus fugiat consequatur sapiente officiis expedita pariatur non odio velit libero officia. Ea similique ipsa ex.
-            Maiores id quia debitis vel! Provident fugit voluptatibus eos temporibus atque cum enim totam aliquid architecto odio, dolor quam sed, dicta aliquam. Eveniet, corrupti dicta consectetur tempore distinctio enim nemo?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore autem corporis, fuga delectus optio expedita inventore aliquam neque. Dicta, quam voluptates harum ea temporibus quaerat fugiat eaque delectus similique!
-            Sunt aspernatur deserunt, eum illo omnis quas modi magni a commodi quo tempore eveniet natus fugiat consequatur sapiente officiis expedita pariatur non odio velit libero officia. Ea similique ipsa ex.
-            Maiores id quia debitis vel! Provident fugit voluptatibus eos temporibus atque cum enim totam aliquid architecto odio, dolor quam sed, dicta aliquam. Eveniet, corrupti dicta consectetur tempore distinctio enim nemo?</p>
+            <h2>Simule agora!</h2>
+            <p>Escolha qual a melhor opção para você:</p>
+
+            <div id="opcoes">
+                <div id="imoveis" onclick="clickImoveis()">
+                    <span class="material-icons">
+                        home
+                        </span>
+                        imóveis
+                </div>
+                <div id="automoveis">
+                    <span class="material-icons">
+                        directions_car
+                        </span>
+                        automóveis
+                </div>
+                <div id="investimentos">
+                    <span class="material-icons">
+                        attach_money
+                        </span>
+                        investimentos
+                </div>
+            </div>
+
+            <div id="opcoes-imoveis">
+                <div id="casas">
+                    <span class="material-icons">
+                        house
+                        </span>
+                    casa
+                </div>
+                <div id="construir">
+                    <span class="material-icons">
+                        construction
+                        </span>
+                    construir
+                </div>
+            </div>
+
+            <div id="opcoes-automoveis">
+                <div id="carro">
+                    <span class="material-icons">
+                        directions_car
+                        </span>
+                    carro
+                </div>
+                <div id="caminhao">
+                    <span class="material-icons">
+                        local_shipping
+                        </span>
+                    caminhão
+                </div>
+            </div>
+
+            <div id="opcoes-investimentos">
+                <div id="poupanca">
+                    <span class="material-icons">
+                        savings
+                        </span>
+                    poupança
+                </div>
+                <div id="renda-extra">
+                    <span class="material-icons">
+                        monetization_on
+                        </span>
+                    renda extra
+                </div>
+            </div>
         </article>
     </main>
 
@@ -52,11 +110,20 @@
         }
 
         function clickBurger() {
-            var menu = document.getElementById ('menu')
+            var menu = document.getElementById('menu')
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
             } else {
                 menu.style.display = 'block'
+            }
+        }
+
+        function clickImoveis() {
+            var opcoesimoveis = document.getElementById('opcoes-imoveis')
+            if (opcoesimoveis.style.display == 'none'){
+                opcoesimoveis.style.display = 'block'
+            } else {
+                opcoesimoveis.style.display = 'none'
             }
         }
     </script>

@@ -50,6 +50,65 @@ header > menu > ul > li > a {
     font-weight: bolder;
 }
 
+main {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 1.6em;
+    color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: rgb(0, 116, 116);
+}
+
+span {
+    border: 1px solid black;
+}
+
+#opcoes {
+    margin: 20px;
+    padding: 5px;
+}
+
+#opcoes div {
+    display: inline;
+}
+
+#opcoes-imoveis {
+    display: none;
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#opcoes-automoveis {
+    display: none;
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#opcoes-investimentos {
+    display: none;
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+
+
 
 footer {
     background-color: rgb(50, 50, 50);
