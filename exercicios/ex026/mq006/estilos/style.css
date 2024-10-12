@@ -55,6 +55,9 @@ main {
     padding: 20px 10px;
     max-width: 400px;
     margin: auto;
+    min-height: 400px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
 }
 
 main h2 {
@@ -113,6 +116,25 @@ main p {
 .geral {
     padding: 10px;
     margin-bottom: 10px;
+}
+
+input#simu {
+    background-color: red;
+    color: white;
+    margin: auto;
+    display: none;
+}
+
+aside {
+    background-color: darkgray;
+    padding: 20px 10px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+aside p {
+    line-height: 40px;
 }
 
 

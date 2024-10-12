@@ -25,7 +25,7 @@
 
     <main>
         <article>
-            <h2>Simule agora!</h2>
+            <h2>Simule Agora!</h2>
             <p>Escolha qual a melhor opção para você:</p>
 
             <div id="opcoes">
@@ -56,13 +56,13 @@
             </div>
 
             <div id="opcoes-imoveis">
-                <div id="casas" class="geral">
+                <div id="casas" class="geral" onclick="simular()">
                     <span class="material-icons">
                         house
                         </span>
                     casa
                 </div>
-                <div id="construir" class="geral">
+                <div id="construir" class="geral" onclick="simular()">
                     <span class="material-icons">
                         construction
                         </span>
@@ -71,13 +71,13 @@
             </div>
 
             <div id="opcoes-automoveis">
-                <div id="carro" class="geral">
+                <div id="carro" class="geral" onclick="simular()">
                     <span class="material-icons">
                         directions_car
                         </span>
                     carro
                 </div>
-                <div id="caminhao" class="geral">
+                <div id="caminhao" class="geral" onclick="simular()">
                     <span class="material-icons">
                         local_shipping
                         </span>
@@ -86,24 +86,33 @@
             </div>
 
             <div id="opcoes-investimentos">
-                <div id="poupanca" class="geral">
+                <div id="poupanca" class="geral" onclick="simular()">
                     <span class="material-icons">
                         savings
                         </span>
                     poupança
                 </div>
-                <div id="renda-extra" class="geral">
+                <div id="renda-extra" class="geral" onclick="simular()">
                     <span class="material-icons">
                         monetization_on
                         </span>
                     renda extra
                 </div>
             </div>
+            <div id="form">
+                <form action="cadastro.php" method="get">
+                    <input id="simu" type="submit" value="SIMULAR">
+                </form>
+            </div>
         </article>
     </main>
-
+    <aside>
+        <p>Todos os direitos reservados</p>
+        <p>Trabalhe conosco</p>
+        <p>Política de Privacidade</p>
+    </aside>
     <footer>
-        <p>Site desenvolvido por Ygor Alves</p>
+        <p>Site Desenvolvido por Ygor Alves</p>
     </footer>
 
     <script>
@@ -139,6 +148,9 @@
             if (opcoesinvestimentos.style.display == 'block'){
                 opcoesinvestimentos.style.display = 'none'
             }
+            if (simu.style.display == 'block') {
+                simu.style.display = 'none'
+            }
         }
 
         function clickAutomoveis() {
@@ -155,6 +167,9 @@
             }
             if (opcoesinvestimentos.style.display == 'block'){
                 opcoesinvestimentos.style.display = 'none'
+            }
+            if (simu.style.display == 'block') {
+                simu.style.display = 'none'
             }
         }
 
@@ -173,6 +188,14 @@
             if (opcoesimoveis.style.display == 'block'){
                 opcoesimoveis.style.display = 'none'
             }
+            if (simu.style.display == 'block') {
+                simu.style.display = 'none'
+            }
+        }
+
+        function simular() {
+            var simu = document.getElementById('simu')
+            simu.style.display = 'block'
         }
     </script>
 </body>
