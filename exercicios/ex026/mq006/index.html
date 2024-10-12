@@ -30,22 +30,28 @@
 
             <div id="opcoes">
                 <div id="imoveis" onclick="clickImoveis()">
-                    <span class="material-icons">
-                        home
-                        </span>
-                        imóveis
+                    <span class="spanborda">
+                        <span class="material-icons">
+                            home
+                            </span>
+                            imóveis
+                    </span>
                 </div>
-                <div id="automoveis">
-                    <span class="material-icons">
-                        directions_car
-                        </span>
-                        automóveis
+                <div id="automoveis" onclick="clickAutomoveis()">
+                    <span class="spanborda">
+                        <span class="material-icons">
+                            directions_car
+                            </span>
+                            automóveis
+                    </span>
                 </div>
-                <div id="investimentos">
-                    <span class="material-icons">
-                        attach_money
-                        </span>
-                        investimentos
+                <div id="investimentos" onclick="clickInvestimentos()">
+                    <span class="spanborda">
+                        <span class="material-icons">
+                            attach_money
+                            </span>
+                            investimentos
+                    </span>
                 </div>
             </div>
 
@@ -120,9 +126,51 @@
 
         function clickImoveis() {
             var opcoesimoveis = document.getElementById('opcoes-imoveis')
+            var opcoesautomoveis = document.getElementById('opcoes-automoveis')
+            var opcoesinvestimentos = document.getElementById('opcoes-investimentos')
             if (opcoesimoveis.style.display == 'none'){
                 opcoesimoveis.style.display = 'block'
             } else {
+                opcoesimoveis.style.display = 'none'
+            }
+            if (opcoesautomoveis.style.display == 'block'){
+                opcoesautomoveis.style.display = 'none'
+            }
+            if (opcoesinvestimentos.style.display == 'block'){
+                opcoesinvestimentos.style.display = 'none'
+            }
+        }
+
+        function clickAutomoveis() {
+            var opcoesimoveis = document.getElementById('opcoes-imoveis')
+            var opcoesautomoveis = document.getElementById('opcoes-automoveis')
+            var opcoesinvestimentos = document.getElementById('opcoes-investimentos')
+            if (opcoesautomoveis.style.display == 'none'){
+                opcoesautomoveis.style.display = 'block'
+            } else {
+                opcoesautomoveis.style.display = 'none'
+            }
+            if (opcoesimoveis.style.display == 'block'){
+                opcoesimoveis.style.display = 'none'
+            }
+            if (opcoesinvestimentos.style.display == 'block'){
+                opcoesinvestimentos.style.display = 'none'
+            }
+        }
+
+        function clickInvestimentos() {
+            var opcoesimoveis = document.getElementById('opcoes-imoveis')
+            var opcoesautomoveis = document.getElementById('opcoes-automoveis')
+            var opcoesinvestimentos = document.getElementById('opcoes-investimentos')
+            if (opcoesinvestimentos.style.display == 'none'){
+                opcoesinvestimentos.style.display = 'block'
+            } else {
+                opcoesinvestimentos.style.display = 'none'
+            }
+            if (opcoesautomoveis.style.display == 'block'){
+                opcoesautomoveis.style.display = 'none'
+            }
+            if (opcoesimoveis.style.display == 'block'){
                 opcoesimoveis.style.display = 'none'
             }
         }

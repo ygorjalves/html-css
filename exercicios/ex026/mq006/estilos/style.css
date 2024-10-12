@@ -52,7 +52,7 @@ header > menu > ul > li > a {
 
 main {
     background-color: white;
-    padding: 20px;
+    padding: 20px 10px;
     max-width: 400px;
     margin: auto;
 }
@@ -68,13 +68,18 @@ main p {
     color: rgb(0, 116, 116);
 }
 
-span {
+
+.spanborda {
+    padding-top: 10px;
     border: 1px solid black;
 }
 
+.spanborda:hover {
+    cursor: pointer;
+}
+
 #opcoes {
-    margin: 20px;
-    padding: 5px;
+    margin: 10px;
 }
 
 #opcoes div {
